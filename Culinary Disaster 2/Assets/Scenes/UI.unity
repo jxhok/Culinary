@@ -6347,7 +6347,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 767140554}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2135908835}
+        m_TargetAssemblyTypeName: GetInputFieldValue, Assembly-CSharp
+        m_MethodName: Calculate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &767140554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15951,7 +15963,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1951105858}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2135908835}
+        m_TargetAssemblyTypeName: GetInputFieldValue, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1951105858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17261,7 +17285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2043740662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2135908835}
+        m_TargetAssemblyTypeName: GetInputFieldValue, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2043740662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17880,6 +17916,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110391846}
   m_CullTransparentMesh: 1
+--- !u!1 &2135908834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2135908836}
+  - component: {fileID: 2135908835}
+  m_Layer: 0
+  m_Name: manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2135908835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135908834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb61ef95fd5043c43be4519e11377e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Amt1: {fileID: 1403774263}
+  Cost1: {fileID: 288283776}
+  Cost2: {fileID: 1781519224}
+  Amt2: {fileID: 649240531}
+  Cost3: {fileID: 911162379}
+  Amt3: {fileID: 830679081}
+  Cost4: {fileID: 1498436089}
+  Amt4: {fileID: 2003290924}
+  Amt5: {fileID: 1555252428}
+  Cost5: {fileID: 1312851133}
+  Cost6: {fileID: 1914114270}
+  Amt6: {fileID: 2110391848}
+  Cost7: {fileID: 1030440010}
+  Amt7: {fileID: 243866023}
+  Cost8: {fileID: 1995174107}
+  Amt8: {fileID: 139307338}
+  markupValue: {fileID: 461576095}
+  Units: {fileID: 1085026242}
+  caculatedNumber: {fileID: 432197271}
+--- !u!4 &2135908836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135908834}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 515.2334, y: 438.89386, z: -5.3910546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2145155254
 GameObject:
   m_ObjectHideFlags: 0
@@ -18251,3 +18350,4 @@ SceneRoots:
   - {fileID: 80783595}
   - {fileID: 1546945556}
   - {fileID: 368974782}
+  - {fileID: 2135908836}
