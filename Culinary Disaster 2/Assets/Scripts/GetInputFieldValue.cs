@@ -4,8 +4,6 @@ using UnityEngine.Rendering.Universal;
 public class GetInputFieldValue : MonoBehaviour
 {
     [SerializeField]
-    TMP_InputField field;
-    [SerializeField]
     TMP_InputField Amt1;
     [SerializeField]
     TMP_InputField Cost1;
@@ -38,33 +36,11 @@ public class GetInputFieldValue : MonoBehaviour
     [SerializeField]
     TMP_InputField Amt8;
     [SerializeField]
-    TMP_InputField Cost9;
-    [SerializeField]
-    TMP_InputField Amt9;
-    [SerializeField]
-    TMP_InputField Cost10;
-    [SerializeField]
-    TMP_InputField Amt10;
-    [SerializeField]
     TMP_InputField markupValue;
     [SerializeField]
     TMP_InputField Units;
     [SerializeField]
     TMP_Text caculatedNumber;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-        }
-    }
-
     public void Calculate()
     {
         // finding the raw cost of item 1
@@ -123,22 +99,8 @@ public class GetInputFieldValue : MonoBehaviour
         float itemAmt8 = -1;
         Debug.Log(float.TryParse(Amt8.text, out itemAmt8));
         Debug.Log(itemAmt8 * itemCost8);
-        // item 9
-        float itemCost9 = -1;
-        Debug.Log(Amt9.text);
-        Debug.Log(float.TryParse(Cost9.text, out itemCost9));
-        float itemAmt9 = -1;
-        Debug.Log(float.TryParse(Amt9.text, out itemAmt9));
-        Debug.Log(itemAmt9 * itemCost9);
-        // item 10
-        float itemCost10 = -1;
-        Debug.Log(Amt10.text);
-        Debug.Log(float.TryParse(Cost10.text, out itemCost10));
-        float itemAmt10 = -1;
-        Debug.Log(float.TryParse(Amt10.text, out itemAmt10));
-        Debug.Log(itemAmt10 * itemCost10);
         // find total raw cost
-        float totalCost = (itemAmt1 * itemCost1) + (itemAmt2 * itemCost2) + (itemAmt3 * itemCost3) + (itemAmt4 * itemCost4) + (itemAmt5 * itemCost5) + (itemAmt6 * itemCost6) + (itemAmt7 * itemCost7) + (itemAmt8 * itemCost8) + (itemAmt9 * itemCost9) + (itemAmt10 * itemCost10);
+        float totalCost = (itemAmt1 * itemCost1) + (itemAmt2 * itemCost2) + (itemAmt3 * itemCost3) + (itemAmt4 * itemCost4) + (itemAmt5 * itemCost5) + (itemAmt6 * itemCost6) + (itemAmt7 * itemCost7) + (itemAmt8 * itemCost8);
         Debug.Log(totalCost);
         //markup value
         float markup = -1;
@@ -170,8 +132,6 @@ public class GetInputFieldValue : MonoBehaviour
         Amt6.text = 0.ToString();
         Amt7.text = 0.ToString();
         Amt8.text = 0.ToString();
-        Amt9.text = 0.ToString();
-        Amt10.text = 0.ToString();
         Cost1.text = 0.ToString();
         Cost2.text = 0.ToString();
         Cost3.text = 0.ToString();
@@ -180,8 +140,6 @@ public class GetInputFieldValue : MonoBehaviour
         Cost6.text = 0.ToString();
         Cost7.text = 0.ToString();
         Cost8.text = 0.ToString();
-        Cost9.text = 0.ToString();
-        Cost10.text = 0.ToString();
         markupValue.text = 0.ToString();
         Units.text = 0.ToString();
         caculatedNumber.text = 0.ToString();
